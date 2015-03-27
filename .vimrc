@@ -65,7 +65,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'airblade/vim-gitgutter' " gitの差分を表示するぜ
-
+NeoBundle 'lilydjwg/colorizer'		"カラーコードをその色に
+NeoBundle 'Lokaltog/vim-powerline'            " ステータスライン
+NeoBundle 'pekepeke/titanium-vim'             " Titanium
+NeoBundle 'scrooloose/nerdtree'
 
 
 filetype plugin indent on
@@ -84,8 +87,16 @@ let g:molokai_original = 1
 let g:rehash256 = 1
 set background=dark
 
+
 "---------------------------------ここまで--------------------------
 
 
 
-
+"----------------------------- NERDtree設ここから定--------------------------
+let NERDTreeShowHidden = 1
+let file_name = expand("%:p")
+if has('vim_starting') &&  file_name == ""
+ 	autocmd VimEnter * execute 'NERDTree ./'
+endif
+let g:NERDTreeWinSize=20
+"-------------------------------NERDTreeここまで--------------------------
