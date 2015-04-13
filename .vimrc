@@ -16,6 +16,41 @@ if exists('&colorcolumn')
 	autocmd FileType sh,perl,vim,ruby,python,javascript setlocal textwidth=80
 endif
 
+"** システム設定 **
+set nocompatible
+set noswapfile                      "swpの作成無効化
+set nobackup                        "~の作成無効化
+set writebackup                     "上書き成功時に~を削除
+set clipboard+=unnamed,autoselect   "クリップボードを共有
+" 
+" "** 文字コード設定 **
+set encoding=utf-8                  "vim
+set fileencoding=utf-8              "保存するファイル
+set fencs=iso-2022-jp,enc-jp,cp932  "開くファイル
+"  
+"  "** 表示設定 **
+"  syntax on                           "ハイライト表示
+"  set title                           "タイトル
+"  set number                          "行番号
+"   
+"   "** カラースキーマ設定 **
+"   set t_Co=256
+"   colorscheme molokai
+"   let g:molokai_original=1
+"   set background=dark
+"    
+"    set tabstop=4                       "タブ文字幅
+"    set shiftwidth=4                    "インデント幅
+"    set noexpandtab                     "挿入モードでタブ文字有効
+"    set autoindent
+"    set smartindent
+"    set smarttab
+"     
+"     "** ファイル別設定 **
+"     filetype on
+"     autocmd FileType c,cpp,perl,html set cindent
+
+
 
 
 " tput colors が 256 になる TERM が設定されているとき
@@ -69,6 +104,7 @@ NeoBundle 'lilydjwg/colorizer'		"カラーコードをその色に
 NeoBundle 'Lokaltog/vim-powerline'            " ステータスライン
 NeoBundle 'pekepeke/titanium-vim'             " Titanium
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'thinca/vim-quickrun'
 
 
 filetype plugin indent on
@@ -98,5 +134,5 @@ let file_name = expand("%:p")
 if has('vim_starting') &&  file_name == ""
  	autocmd VimEnter * execute 'NERDTree ./'
 endif
-let g:NERDTreeWinSize=20
+let g:NERDTreeWinSize=30
 "-------------------------------NERDTreeここまで--------------------------
