@@ -24,6 +24,8 @@ $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
 
 
+molokaiはうまく動いていないので参考サイトをみるように！！！
+
 
 vim でneobundleの更新
 :NeoBundleInstall
