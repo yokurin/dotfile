@@ -20,5 +20,4 @@ alias ttt='ti build -p ios --pp-uuid  82A28DBF-1DE5-4F12-91A9-FC9B274D8'
 #titanium workspaceに移動
 alias cdti='cd Documents/Titanium_Studio_Workspace/'
 
-
-
+export PATH=/Users/tsubasa/adt-bundle-mac-x86_64-20140321/sdk/tools:$PATH
