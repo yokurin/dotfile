@@ -6,3 +6,4 @@ titanium-vim
 unite.vim
 vim-gitgutter
 vim-powerline
+vim-quickrun
