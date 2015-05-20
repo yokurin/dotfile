@@ -5,7 +5,7 @@ alias ls='ls -G'
 alias ll='ls -laG'
 
 
-# ファイルの拡張子指定
+# ファイルの拡張子指定($1:拡張子, $2:検索したいワード)
 function ff (){
     find . -type f -name "*.$1" | xargs grep -n "$2"
 }
