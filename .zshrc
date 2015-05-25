@@ -137,8 +137,13 @@ alias sudo='sudo '
 alias -g L='| less'
 alias -g G='| grep'
 
+# titanium iphone 4inch で起動
+alias tttt='ti build -p ios --retina --tall'
+
+##titanium iphone 4inch retina log level info
+alias tttt info='ti build -p ios -T simulator --log-level info --retina --tall --sim-64bit'
 #titanium iosで起動
-alias ttt='ti build -p ios -C 82A28DBF-1DE5-4F12-91A9-FC9B274D8'
+#alias ttt='ti build -p ios -C 82A28DBF-1DE5-4F12-91A9-FC9B274D8'
 
 #titanium workspaceに移動
 alias cdti='cd Documents/Titanium_Studio_Workspace/'
