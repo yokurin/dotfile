@@ -23,29 +23,29 @@ set nobackup                        "~の作成無効化
 set writebackup                     "上書き成功時に~を削除
 set clipboard+=unnamed,autoselect   "クリップボードを共有
 " 
-" " "** 文字コード設定 **
-" set encoding=utf-8                  "vim
-" set fileencoding=utf-8              "保存するファイル
-" set fencs=iso-2022-jp,enc-jp,cp932  "開くファイル
-" "  
-"   "** 表示設定 **
-"     syntax on                           "ハイライト表示
-"     set title                           "タイトル
-"     set number                          "行番号
-"      
-"     "** カラースキーマ設定 **
-"     set t_Co=256
-"     :colorscheme badwolf
-"     let g:molokai_original=1
-"     set background=dark
-"      
-"     set tabstop=4                       "タブ文字幅
-"     set shiftwidth=4                    "インデント幅
-"     set noexpandtab                     "挿入モードでタブ文字有効
-"     set autoindent
-"     set smartindent
-"     set smarttab
-"      
+ " "** 文字コード設定 **
+ set encoding=utf-8                  "vim
+ set fileencoding=utf-8              "保存するファイル
+ set fencs=iso-2022-jp,enc-jp,cp932  "開くファイル
+ "  
+ "** 表示設定 **
+ syntax on                           "ハイライト表示
+ set title                           "タイトル
+ set number                          "行番号
+  
+ "** カラースキーマ設定 **
+ set t_Co=256
+ colorscheme molokai
+ let g:molokai_original=1
+ set background=dark
+  
+ set tabstop=4                       "タブ文字幅
+ set shiftwidth=4                    "インデント幅
+ set noexpandtab                     "挿入モードでタブ文字有効
+ set autoindent
+ set smartindent
+ set smarttab
+    
      "** ファイル別設定 **
 
 
@@ -113,17 +113,17 @@ filetype plugin indent on
 
 
 
-" -------------------- color スキーマ------------------------
-
-colorscheme molokai
-syntax on
-"let g:molokai_original = 1 "molokai
-"let g:rehash256 = 1 "molokai
-set background=dark
-highlight Normal ctermbg=none
-
-
-"---------------------------------ここまで--------------------------
+"" -------------------- color スキーマ------------------------
+"
+"colorscheme molokai
+"syntax on
+""let g:molokai_original = 1 "molokai
+""let g:rehash256 = 1 "molokai
+"set background=dark
+"highlight Normal ctermbg=none
+"
+"
+""---------------------------------ここまで--------------------------
 
 
 
