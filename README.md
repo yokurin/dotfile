@@ -1,7 +1,7 @@
 
 やることりすと
 
-homebrew install 
+homebrew install
 下記コマンドを実行
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -24,10 +24,11 @@ $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
 
 
-molokaiはうまく動いていないので参考サイトをみるように！！！
+colorのディレクトリはずれてる
+参考サイトをみるように
 
 
-vim でneobundleの更新
+neobundleを更新したときは実行する
 :NeoBundleInstall
 
 

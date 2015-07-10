@@ -9,6 +9,7 @@ set autoindent
 " set expandtab
 set shiftwidth=4
 
+
 " 80文字で赤線
 set textwidth=0
 if exists('&colorcolumn')
@@ -23,29 +24,32 @@ set nobackup                        "~の作成無効化
 set writebackup                     "上書き成功時に~を削除
 set clipboard+=unnamed,autoselect   "クリップボードを共有
 " 
- " "** 文字コード設定 **
- set encoding=utf-8                  "vim
- set fileencoding=utf-8              "保存するファイル
- set fencs=iso-2022-jp,enc-jp,cp932  "開くファイル
- "  
- "** 表示設定 **
- syntax on                           "ハイライト表示
- set title                           "タイトル
- set number                          "行番号
-  
- "** カラースキーマ設定 **
- set t_Co=256
- colorscheme molokai
- let g:molokai_original=1
- set background=dark
-  
- set tabstop=4                       "タブ文字幅
- set shiftwidth=4                    "インデント幅
- set noexpandtab                     "挿入モードでタブ文字有効
- set autoindent
- set smartindent
- set smarttab
-    
+" "** 文字コード設定 **
+set encoding=utf-8                  "vim
+set fileencoding=utf-8              "保存するファイル
+set fencs=iso-2022-jp,enc-jp,cp932  "開くファイル
+"  
+"** 表示設定 **
+syntax on                           "ハイライト表示
+set title                           "タイトル
+set number                          "行番号
+ 
+"** カラースキーマ設定 **
+set t_Co=256
+colorscheme molokai
+let g:molokai_original=1
+set background=dark
+ 
+set tabstop=4                       "タブ文字幅
+set shiftwidth=4                    "インデント幅
+set noexpandtab                     "挿入モードでタブ文字有効
+set autoindent
+set smartindent
+set smarttab
+set smartcase " 小文字のみで検索したときに大文字小文字を無視する
+
+
+   
      "** ファイル別設定 **
 
 
@@ -78,8 +82,6 @@ set number
 set clipboard=unnamed,autoselect
 
 
-
-
 " ------------------ここからneobundle初期設定---------------------------
 " 以下を追記
 set nocompatible
@@ -103,6 +105,9 @@ NeoBundle 'Lokaltog/vim-powerline'            " ステータスライン
 NeoBundle 'pekepeke/titanium-vim'             " Titanium
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'nathanaelkane/vim-indent-guides' " インデントに色を付けて見やすくする
+" vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
+let g:indent_guides_enable_on_vim_startup = 1
 
 
 filetype plugin indent on
