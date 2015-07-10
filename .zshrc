@@ -150,6 +150,8 @@ alias cdti='cd Documents/Titanium_Studio_Workspace/'
 
 export PATH=/Users/tsubasa/adt-bundle-mac-x86_64-20140321/sdk/tools:$PATH
 
+#apache run
+alias apacherun='sudo /usr/sbin/apachectl start'
 
 
 # C で標準出力をクリップボードにコピーする
