@@ -138,7 +138,7 @@ alias -g L='| less'
 alias -g G='| grep'
 
 # titanium iphone 4inch で起動
-alias tttt='ti build -p ios --retina --tall'
+#alias tttt='ti build -p ios --retina --tall'
 
 ##titanium iphone 4inch retina log level info
 alias tttt info='ti build -p ios -T simulator --log-level info --retina --tall --sim-64bit'
@@ -172,8 +172,26 @@ function ff (){
     find . -type f -name "*.$1" | xargs grep -n "$2"
 }
 
-########################################
-# OS 別の設定
+#######################################
+# zsh histroy を control + r で表示 
+function peco-select-history() {
+    local tac
+    if which tac > /dev/null; then
+        tac="tac"
+    else
+        tac="tail -r"
+    fi
+    BUFFER=$(\history -n 1 | \
+        eval $tac | \
+        peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history
+
+######################################
+## OS 別の設定
 case ${OSTYPE} in
     darwin*)
         #Mac用の設定
