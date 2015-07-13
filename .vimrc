@@ -91,45 +91,44 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
   call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundleFetch 'Shougo/neobundle.vim'
+  " 以下は必要に応じて追加
+  NeoBundle 'Shougo/unite.vim'
+  NeoBundle 'Shougo/neosnippet.vim'
+  NeoBundle 'airblade/vim-gitgutter' " gitの差分を表示するぜ
+  NeoBundle 'lilydjwg/colorizer'		"カラーコードをその色に
+  NeoBundle 'Lokaltog/vim-powerline'            " ステータスライン
+  NeoBundle 'pekepeke/titanium-vim'             " Titanium
+  NeoBundle 'scrooloose/nerdtree'
+  NeoBundle 'thinca/vim-quickrun'
+  NeoBundle 'nathanaelkane/vim-indent-guides' " インデントに色を付けて見やすくする
   call neobundle#end()
 endif 
 
-NeoBundleFetch 'Shougo/neobundle.vim'
 
 " 以下は必要に応じて追加
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'airblade/vim-gitgutter' " gitの差分を表示するぜ
-NeoBundle 'lilydjwg/colorizer'		"カラーコードをその色に
-NeoBundle 'Lokaltog/vim-powerline'            " ステータスライン
-NeoBundle 'pekepeke/titanium-vim'             " Titanium
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'thinca/vim-quickrun'
-NeoBundle 'nathanaelkane/vim-indent-guides' " インデントに色を付けて見やすくする
+"NeoBundle 'Shougo/unite.vim'
+"NeoBundle 'Shougo/neosnippet.vim'
+"NeoBundle 'airblade/vim-gitgutter' " gitの差分を表示するぜ
+"NeoBundle 'lilydjwg/colorizer'		"カラーコードをその色に
+"NeoBundle 'Lokaltog/vim-powerline'            " ステータスライン
+"NeoBundle 'pekepeke/titanium-vim'             " Titanium
+"NeoBundle 'scrooloose/nerdtree'
+"NeoBundle 'thinca/vim-quickrun'
+"NeoBundle 'nathanaelkane/vim-indent-guides' " インデントに色を付けて見やすくする
+
 " vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
 let g:indent_guides_enable_on_vim_startup = 1
-
+set ts=4 sw=4 et
+let g:indent_guides_start_level = 2
+let g:indent_guides_size = 1
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
 
 filetype plugin indent on
 
 
 " --------------ここまでneobundke----------------------------------
-
-
-
-
-"" -------------------- color スキーマ------------------------
-"
-"colorscheme molokai
-"syntax on
-""let g:molokai_original = 1 "molokai
-""let g:rehash256 = 1 "molokai
-"set background=dark
-"highlight Normal ctermbg=none
-"
-"
-""---------------------------------ここまで--------------------------
-
 
 
 "----------------------------- NERDtree設ここから定--------------------------
