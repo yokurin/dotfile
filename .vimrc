@@ -93,7 +93,7 @@ if has('vim_starting')
   NeoBundleFetch 'Shougo/neobundle.vim'
   " 以下は必要に応じて追加
   NeoBundle 'Shougo/unite.vim'
-  NeoBundle 'Shougo/neosnippet.vim'
+  "NeoBundle 'Shougo/neosnippet.vim'
   NeoBundle 'airblade/vim-gitgutter' " gitの差分を表示するぜ
   NeoBundle 'lilydjwg/colorizer'		"カラーコードをその色に
   NeoBundle 'Lokaltog/vim-powerline'            " ステータスライン
