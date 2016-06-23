@@ -8,7 +8,6 @@ export PATH=$COCOS_CONSOLE_ROOT:$PATH
 # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
 export COCOS_TEMPLATES_ROOT=/Users/hayashi/Downloads/cocos2d-x-3.6/templates
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
-<<<<<<< HEAD
 
 ##
 # Your previous /Users/tsubasa/.bash_profile file was backed up as /Users/tsubasa/.bash_profile.macports-saved_2016-04-03_at_20:25:09
@@ -18,6 +17,5 @@ export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-=======
 export PATH="$HOME/.rbenv/bin:$PATH"
->>>>>>> 09f64ea5b2d536cfa1fb2944bc5f4f46515a6ae7
+
