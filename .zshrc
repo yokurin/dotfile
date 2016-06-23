@@ -153,6 +153,12 @@ alias tttt info='ti build -p ios -T simulator --log-level info --retina --tall -
 #titanium workspaceに移動
 alias cdti='cd Documents/Titanium_Studio_Workspace/'
 
+#develop directory まで移動
+alias cddev='cd Documents/develop'
+
+#git alias
+alias gst='git status'
+
 export PATH=/Users/tsubasa/adt-bundle-mac-x86_64-20140321/sdk/tools:$PATH
 
 #apache run
@@ -227,3 +233,7 @@ export PATH=$COCOS_X_ROOT:$PATH
 # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
 export COCOS_TEMPLATES_ROOT=/Users/tsubasa/cocos2d-x-3.1.1//templates
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+
+## for el capitan
+export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
