@@ -234,6 +234,10 @@ export PATH=$COCOS_X_ROOT:$PATH
 export COCOS_TEMPLATES_ROOT=/Users/tsubasa/cocos2d-x-3.1.1//templates
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
+# nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 
 ## for el capitan
 export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
